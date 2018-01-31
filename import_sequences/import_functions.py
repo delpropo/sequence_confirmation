@@ -1,5 +1,6 @@
 from Bio import SeqIO
 
+
 def import_from_email(pasted_data:str):
     #TODO:write function to parse data pasted from email
     pass
