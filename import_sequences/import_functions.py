@@ -12,9 +12,21 @@ def import_from_email(test_data:str):
     #TODO:write function to parse data pasted from email
     imported_data = open(test_data, "r")
     allthedata = imported_data.read()
+    imported_data.close()
     #split_words = words.splitlines()
+
+    sample_number = "Sample Number :"
+    primer = "Primer :"
+    clone_name = "Clone Name :"
+    gel_number = "Gel Number :"
+    lane_number = "Lane Number :"
+    comments = "The Sequencing Technician had the following comment about this sample:"
+
+    for line in allthedata:
+        line.find()
     print(allthedata)
     pass
+
 
 def import_from_abi(folder_name:str):
     os.chdir(folder_name)
